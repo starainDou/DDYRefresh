@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>startPoint</key>
+		<string>{18,0}</string>
+		<key>endPoint</key>
+		<string>{5,8}</string>
+	</dict>
+	<dict>
+		<key>startPoint</key>
+		<string>{18,0}</string>
+		<key>endPoint</key>
+		<string>{31,8}</string>
+	</dict>
+    <dict>
+        <key>startPoint</key>
+        <string>{5,8}</string>
+        <key>endPoint</key>
+        <string>{0,24}</string>
+    </dict>
+    <dict>
+        <key>startPoint</key>
+        <string>{31,8}</string>
+        <key>endPoint</key>
+        <string>{35,24}</string>
+    </dict>
+    <dict>
+        <key>startPoint</key>
+        <string>{0,24}</string>
+        <key>endPoint</key>
+        <string>{12,16}</string>
+    </dict>
+    <dict>
+        <key>startPoint</key>
+        <string>{35,24}</string>
+        <key>endPoint</key>
+        <string>{24,16}</string>
+    </dict>
+    <dict>
+        <key>startPoint</key>
+        <string>{12,16}</string>
+        <key>endPoint</key>
+        <string>{18,0}</string>
+    </dict>
+    <dict>
+        <key>startPoint</key>
+        <string>{24,16}</string>
+        <key>endPoint</key>
+        <string>{18,0}</string>
+    </dict>
+    <dict>
+        <key>startPoint</key>
+        <string>{12,16}</string>
+        <key>endPoint</key>
+        <string>{18,30}</string>
+    </dict>
+    <dict>
+        <key>startPoint</key>
+        <string>{24,16}</string>
+        <key>endPoint</key>
+        <string>{18,30}</string>
+    </dict>
+    <dict>
+        <key>startPoint</key>
+        <string>{24,16}</string>
+        <key>endPoint</key>
+        <string>{12,16}</string>
+    </dict>
+</array>
+</plist>
+
