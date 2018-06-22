@@ -32,11 +32,13 @@
 		A44134D920D9E62600A41152 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A44134BE20D9E62600A41152 /* Info.plist */; };
 		A44134DA20D9E62600A41152 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A44134BF20D9E62600A41152 /* main.m */; };
 		A44134DB20D9E62600A41152 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A44134C120D9E62600A41152 /* ViewController.m */; };
-		A44134E920D9E90600A41152 /* BossHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = A44134E820D9E90600A41152 /* BossHeaderView.m */; };
+		A44134E920D9E90600A41152 /* BossRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = A44134E820D9E90600A41152 /* BossRefreshHeader.m */; };
 		A44134EC20D9E93500A41152 /* BossFreshLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A44134EB20D9E93500A41152 /* BossFreshLayer.m */; };
 		A44134EF20DB699200A41152 /* SmartMeshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = A44134EE20DB699200A41152 /* SmartMeshHeader.m */; };
 		A44134FD20DC8AB000A41152 /* SmartMesh.plist in Resources */ = {isa = PBXBuildFile; fileRef = A44134FC20DC8AB000A41152 /* SmartMesh.plist */; };
 		A441350020DC8D8600A41152 /* SmartMeshRefreshLine.m in Sources */ = {isa = PBXBuildFile; fileRef = A44134FF20DC8D8600A41152 /* SmartMeshRefreshLine.m */; };
+		A441350320DCCCC400A41152 /* SmartMeshRefreshVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A441350220DCCCC400A41152 /* SmartMeshRefreshVC.m */; };
+		A441350620DCCD5500A41152 /* BossRefreshVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A441350520DCCD5500A41152 /* BossRefreshVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,8 +90,8 @@
 		A44134BF20D9E62600A41152 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A44134C020D9E62600A41152 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A44134C120D9E62600A41152 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		A44134E720D9E90600A41152 /* BossHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BossHeaderView.h; sourceTree = "<group>"; };
-		A44134E820D9E90600A41152 /* BossHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BossHeaderView.m; sourceTree = "<group>"; };
+		A44134E720D9E90600A41152 /* BossRefreshHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BossRefreshHeader.h; sourceTree = "<group>"; };
+		A44134E820D9E90600A41152 /* BossRefreshHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BossRefreshHeader.m; sourceTree = "<group>"; };
 		A44134EA20D9E93500A41152 /* BossFreshLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BossFreshLayer.h; sourceTree = "<group>"; };
 		A44134EB20D9E93500A41152 /* BossFreshLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BossFreshLayer.m; sourceTree = "<group>"; };
 		A44134ED20DB699200A41152 /* SmartMeshHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SmartMeshHeader.h; sourceTree = "<group>"; };
@@ -97,6 +99,10 @@
 		A44134FC20DC8AB000A41152 /* SmartMesh.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SmartMesh.plist; sourceTree = "<group>"; };
 		A44134FE20DC8D8600A41152 /* SmartMeshRefreshLine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SmartMeshRefreshLine.h; sourceTree = "<group>"; };
 		A44134FF20DC8D8600A41152 /* SmartMeshRefreshLine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartMeshRefreshLine.m; sourceTree = "<group>"; };
+		A441350120DCCCC400A41152 /* SmartMeshRefreshVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SmartMeshRefreshVC.h; sourceTree = "<group>"; };
+		A441350220DCCCC400A41152 /* SmartMeshRefreshVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartMeshRefreshVC.m; sourceTree = "<group>"; };
+		A441350420DCCD5500A41152 /* BossRefreshVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BossRefreshVC.h; sourceTree = "<group>"; };
+		A441350520DCCD5500A41152 /* BossRefreshVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BossRefreshVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,6 +267,8 @@
 				A44134EE20DB699200A41152 /* SmartMeshHeader.m */,
 				A44134FE20DC8D8600A41152 /* SmartMeshRefreshLine.h */,
 				A44134FF20DC8D8600A41152 /* SmartMeshRefreshLine.m */,
+				A441350120DCCCC400A41152 /* SmartMeshRefreshVC.h */,
+				A441350220DCCCC400A41152 /* SmartMeshRefreshVC.m */,
 				A44134FC20DC8AB000A41152 /* SmartMesh.plist */,
 			);
 			path = SmartMeshHeader;
@@ -269,10 +277,12 @@
 		A44134DD20D9E76600A41152 /* BossZhiPinHeader */ = {
 			isa = PBXGroup;
 			children = (
-				A44134E720D9E90600A41152 /* BossHeaderView.h */,
-				A44134E820D9E90600A41152 /* BossHeaderView.m */,
+				A44134E720D9E90600A41152 /* BossRefreshHeader.h */,
+				A44134E820D9E90600A41152 /* BossRefreshHeader.m */,
 				A44134EA20D9E93500A41152 /* BossFreshLayer.h */,
 				A44134EB20D9E93500A41152 /* BossFreshLayer.m */,
+				A441350420DCCD5500A41152 /* BossRefreshVC.h */,
+				A441350520DCCD5500A41152 /* BossRefreshVC.m */,
 			);
 			path = BossZhiPinHeader;
 			sourceTree = "<group>";
@@ -353,6 +363,7 @@
 				A44134CC20D9E62600A41152 /* MJRefreshBackStateFooter.m in Sources */,
 				A44134D320D9E62600A41152 /* UIScrollView+MJExtension.m in Sources */,
 				A44134D720D9E62600A41152 /* AppDelegate.m in Sources */,
+				A441350620DCCD5500A41152 /* BossRefreshVC.m in Sources */,
 				A44134CE20D9E62600A41152 /* MJRefreshNormalHeader.m in Sources */,
 				A44134C720D9E62600A41152 /* MJRefreshAutoGifFooter.m in Sources */,
 				A44134C320D9E62600A41152 /* MJRefreshBackFooter.m in Sources */,
@@ -362,6 +373,7 @@
 				A44134CB20D9E62600A41152 /* MJRefreshBackNormalFooter.m in Sources */,
 				A441350020DC8D8600A41152 /* SmartMeshRefreshLine.m in Sources */,
 				A44134CF20D9E62600A41152 /* MJRefreshStateHeader.m in Sources */,
+				A441350320DCCCC400A41152 /* SmartMeshRefreshVC.m in Sources */,
 				A44134C920D9E62600A41152 /* MJRefreshAutoStateFooter.m in Sources */,
 				A44134D220D9E62600A41152 /* NSBundle+MJRefresh.m in Sources */,
 				A44134C220D9E62600A41152 /* MJRefreshAutoFooter.m in Sources */,
@@ -372,7 +384,7 @@
 				A44134C420D9E62600A41152 /* MJRefreshComponent.m in Sources */,
 				A44134DA20D9E62600A41152 /* main.m in Sources */,
 				A44134D120D9E62600A41152 /* MJRefreshConst.m in Sources */,
-				A44134E920D9E90600A41152 /* BossHeaderView.m in Sources */,
+				A44134E920D9E90600A41152 /* BossRefreshHeader.m in Sources */,
 				A44134EC20D9E93500A41152 /* BossFreshLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

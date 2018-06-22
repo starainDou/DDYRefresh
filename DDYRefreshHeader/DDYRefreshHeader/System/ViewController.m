@@ -1,36 +1,51 @@
 #import "ViewController.h"
-#import "MJRefresh.h"
-#import "BossHeaderView.h"
-#import "SmartMeshHeader.h"
 
 @interface ViewController ()
+
+@property (nonatomic, strong) NSMutableArray *dataArray;
 
 @end
 
 @implementation ViewController
 
+- (NSMutableArray *)dataArray {
+    if (!_dataArray) {
+        _dataArray = [NSMutableArray array];
+    }
+    return _dataArray;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    __weak __typeof__ (self)weakSelf = self;
-    self.tableView.mj_header = [SmartMeshHeader headerWithRefreshingBlock:^{
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-             __strong __typeof__ (weakSelf)strongSelf = weakSelf;
-            [strongSelf.tableView.mj_header endRefreshing];
-        });
-    }];
+    [self loadDataSource];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 20;
+    return self.dataArray.count;
 }
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellID"];
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cellID"];
     }
-    cell.backgroundColor = [UIColor colorWithRed:230./255. green:230./255. blue:230./255. alpha:1];
-    cell.textLabel.text = [NSString stringWithFormat:@"%@", @"下拉刷新"];
+    cell.textLabel.text = self.dataArray[indexPath.row];
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [self.navigationController pushViewController:[[NSClassFromString(self.dataArray[indexPath.row]) alloc] init] animated:YES];
+}
+
+- (void)loadDataSource {
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        [self.dataArray addObject:@"BossRefreshVC"];
+        [self.dataArray addObject:@"SmartMeshRefreshVC"];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.tableView reloadData];
+        });
+    });
 }
 
 @end

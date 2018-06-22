@@ -1,15 +1,15 @@
-#import "BossHeaderView.h"
+#import "BossRefreshHeader.h"
 #import "BossFreshLayer.h"
 
 const CGFloat BossHeaderHeight = 80.0;
 
-@interface BossHeaderView ()
+@interface BossRefreshHeader ()
 
 @property (nonatomic, strong) BossFreshLayer *freshLayer;
 
 @end
 
-@implementation BossHeaderView
+@implementation BossRefreshHeader
 
 - (BossFreshLayer *)freshLayer {
     if (!_freshLayer) {

@@ -1,6 +1,6 @@
 #import "MJRefreshHeader.h"
 #import "MJRefresh.h"
 
-@interface SmartMeshHeader : MJRefreshHeader
+@interface BossRefreshHeader : MJRefreshHeader
 
 @end
