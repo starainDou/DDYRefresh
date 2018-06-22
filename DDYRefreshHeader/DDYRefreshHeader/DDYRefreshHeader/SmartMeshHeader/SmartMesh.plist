@@ -4,69 +4,71 @@
 <array>
 	<dict>
 		<key>startPoint</key>
-		<string>{18,0}</string>
+		<string>{25,0}</string>
 		<key>endPoint</key>
-		<string>{5,8}</string>
+		<string>{12,8}</string>
 	</dict>
+    <dict>
+        <key>startPoint</key>
+        <string>{12,8}</string>
+        <key>endPoint</key>
+        <string>{7,24}</string>
+    </dict>
+    <dict>
+        <key>startPoint</key>
+        <string>{7,24}</string>
+        <key>endPoint</key>
+        <string>{19,16}</string>
+    </dict>
+    <dict>
+        <key>startPoint</key>
+        <string>{19,16}</string>
+        <key>endPoint</key>
+        <string>{25,0}</string>
+    </dict>
 	<dict>
 		<key>startPoint</key>
-		<string>{18,0}</string>
+		<string>{25,0}</string>
 		<key>endPoint</key>
-		<string>{31,8}</string>
+		<string>{38,8}</string>
 	</dict>
     <dict>
         <key>startPoint</key>
-        <string>{5,8}</string>
+        <string>{38,8}</string>
         <key>endPoint</key>
-        <string>{0,24}</string>
+        <string>{42,24}</string>
+    </dict>
+
+    <dict>
+        <key>startPoint</key>
+        <string>{42,24}</string>
+        <key>endPoint</key>
+        <string>{31,16}</string>
+    </dict>
+
+    <dict>
+        <key>startPoint</key>
+        <string>{31,16}</string>
+        <key>endPoint</key>
+        <string>{25,0}</string>
     </dict>
     <dict>
         <key>startPoint</key>
-        <string>{31,8}</string>
+        <string>{19,16}</string>
         <key>endPoint</key>
-        <string>{35,24}</string>
+        <string>{25,30}</string>
     </dict>
     <dict>
         <key>startPoint</key>
-        <string>{0,24}</string>
+        <string>{31,16}</string>
         <key>endPoint</key>
-        <string>{12,16}</string>
+        <string>{25,30}</string>
     </dict>
     <dict>
         <key>startPoint</key>
-        <string>{35,24}</string>
+        <string>{31,16}</string>
         <key>endPoint</key>
-        <string>{24,16}</string>
-    </dict>
-    <dict>
-        <key>startPoint</key>
-        <string>{12,16}</string>
-        <key>endPoint</key>
-        <string>{18,0}</string>
-    </dict>
-    <dict>
-        <key>startPoint</key>
-        <string>{24,16}</string>
-        <key>endPoint</key>
-        <string>{18,0}</string>
-    </dict>
-    <dict>
-        <key>startPoint</key>
-        <string>{12,16}</string>
-        <key>endPoint</key>
-        <string>{18,30}</string>
-    </dict>
-    <dict>
-        <key>startPoint</key>
-        <string>{24,16}</string>
-        <key>endPoint</key>
-        <string>{18,30}</string>
-    </dict>
-    <dict>
-        <key>startPoint</key>
-        <string>{24,16}</string>
-        <key>endPoint</key>
-        <string>{12,16}</string>
+        <string>{19,16}</string>
     </dict>
 </array>
 </plist>

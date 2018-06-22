@@ -32,9 +32,11 @@
 		A44134D920D9E62600A41152 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A44134BE20D9E62600A41152 /* Info.plist */; };
 		A44134DA20D9E62600A41152 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A44134BF20D9E62600A41152 /* main.m */; };
 		A44134DB20D9E62600A41152 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A44134C120D9E62600A41152 /* ViewController.m */; };
-		A44134E620D9E89C00A41152 /* SmartMesh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A44134E520D9E89C00A41152 /* SmartMesh.bundle */; };
 		A44134E920D9E90600A41152 /* BossHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = A44134E820D9E90600A41152 /* BossHeaderView.m */; };
 		A44134EC20D9E93500A41152 /* BossFreshLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A44134EB20D9E93500A41152 /* BossFreshLayer.m */; };
+		A44134EF20DB699200A41152 /* SmartMeshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = A44134EE20DB699200A41152 /* SmartMeshHeader.m */; };
+		A44134FD20DC8AB000A41152 /* SmartMesh.plist in Resources */ = {isa = PBXBuildFile; fileRef = A44134FC20DC8AB000A41152 /* SmartMesh.plist */; };
+		A441350020DC8D8600A41152 /* SmartMeshRefreshLine.m in Sources */ = {isa = PBXBuildFile; fileRef = A44134FF20DC8D8600A41152 /* SmartMeshRefreshLine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,11 +88,15 @@
 		A44134BF20D9E62600A41152 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A44134C020D9E62600A41152 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A44134C120D9E62600A41152 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		A44134E520D9E89C00A41152 /* SmartMesh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SmartMesh.bundle; sourceTree = "<group>"; };
 		A44134E720D9E90600A41152 /* BossHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BossHeaderView.h; sourceTree = "<group>"; };
 		A44134E820D9E90600A41152 /* BossHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BossHeaderView.m; sourceTree = "<group>"; };
 		A44134EA20D9E93500A41152 /* BossFreshLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BossFreshLayer.h; sourceTree = "<group>"; };
 		A44134EB20D9E93500A41152 /* BossFreshLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BossFreshLayer.m; sourceTree = "<group>"; };
+		A44134ED20DB699200A41152 /* SmartMeshHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SmartMeshHeader.h; sourceTree = "<group>"; };
+		A44134EE20DB699200A41152 /* SmartMeshHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartMeshHeader.m; sourceTree = "<group>"; };
+		A44134FC20DC8AB000A41152 /* SmartMesh.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SmartMesh.plist; sourceTree = "<group>"; };
+		A44134FE20DC8D8600A41152 /* SmartMeshRefreshLine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SmartMeshRefreshLine.h; sourceTree = "<group>"; };
+		A44134FF20DC8D8600A41152 /* SmartMeshRefreshLine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartMeshRefreshLine.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,7 +257,11 @@
 		A44134DC20D9E68100A41152 /* SmartMeshHeader */ = {
 			isa = PBXGroup;
 			children = (
-				A44134E520D9E89C00A41152 /* SmartMesh.bundle */,
+				A44134ED20DB699200A41152 /* SmartMeshHeader.h */,
+				A44134EE20DB699200A41152 /* SmartMeshHeader.m */,
+				A44134FE20DC8D8600A41152 /* SmartMeshRefreshLine.h */,
+				A44134FF20DC8D8600A41152 /* SmartMeshRefreshLine.m */,
+				A44134FC20DC8AB000A41152 /* SmartMesh.plist */,
 			);
 			path = SmartMeshHeader;
 			sourceTree = "<group>";
@@ -324,9 +334,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A44134E620D9E89C00A41152 /* SmartMesh.bundle in Resources */,
 				A44134D920D9E62600A41152 /* Info.plist in Resources */,
 				A44134D820D9E62600A41152 /* LaunchScreen.storyboard in Resources */,
+				A44134FD20DC8AB000A41152 /* SmartMesh.plist in Resources */,
 				A44134D020D9E62600A41152 /* MJRefresh.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,8 +357,10 @@
 				A44134C720D9E62600A41152 /* MJRefreshAutoGifFooter.m in Sources */,
 				A44134C320D9E62600A41152 /* MJRefreshBackFooter.m in Sources */,
 				A44134C520D9E62600A41152 /* MJRefreshFooter.m in Sources */,
+				A44134EF20DB699200A41152 /* SmartMeshHeader.m in Sources */,
 				A44134CA20D9E62600A41152 /* MJRefreshBackGifFooter.m in Sources */,
 				A44134CB20D9E62600A41152 /* MJRefreshBackNormalFooter.m in Sources */,
+				A441350020DC8D8600A41152 /* SmartMeshRefreshLine.m in Sources */,
 				A44134CF20D9E62600A41152 /* MJRefreshStateHeader.m in Sources */,
 				A44134C920D9E62600A41152 /* MJRefreshAutoStateFooter.m in Sources */,
 				A44134D220D9E62600A41152 /* NSBundle+MJRefresh.m in Sources */,

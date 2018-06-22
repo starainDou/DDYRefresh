@@ -1,6 +1,8 @@
 #import "BossHeaderView.h"
 #import "BossFreshLayer.h"
 
+const CGFloat BossHeaderHeight = 80.0;
+
 @interface BossHeaderView ()
 
 @property (nonatomic, strong) BossFreshLayer *freshLayer;
@@ -8,8 +10,6 @@
 @end
 
 @implementation BossHeaderView
-
-
 
 - (BossFreshLayer *)freshLayer {
     if (!_freshLayer) {
@@ -23,7 +23,7 @@
 #pragma mark 初始化配置
 - (void)prepare {
     [super prepare];
-    self.mj_h = 80.;
+    self.mj_h = BossHeaderHeight;
 }
 
 - (void)placeSubviews {
